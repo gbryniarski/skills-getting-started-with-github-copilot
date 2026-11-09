@@ -60,9 +60,16 @@ section h3 {
 .activity-card {
   margin-bottom: 15px;
   padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  border: 1px solid #e0e4f2;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(26, 35, 126, 0.06);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.activity-card:hover {
+  box-shadow: 0 5px 14px rgba(26, 35, 126, 0.12);
+  transform: translateY(-2px);
 }
 
 .activity-card h4 {
@@ -72,6 +79,65 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.participants {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 6px;
+  background-color: #f2f4fc;
+}
+
+.participants h5 {
+  margin-bottom: 7px;
+  color: #1a237e;
+  font-size: 15px;
+}
+
+.participants ul {
+  padding-left: 0;
+  list-style: none;
+  color: #444;
+}
+
+.participants li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 2px 0;
+  overflow-wrap: anywhere;
+}
+
+.delete-participant {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  background: transparent;
+  color: #c62828;
+}
+
+.delete-participant:hover {
+  background-color: #ffebee;
+}
+
+.delete-participant svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.participants .participants-empty {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+  font-style: italic;
 }
 
 .form-group {
